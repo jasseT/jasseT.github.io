@@ -3,44 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<title>J. Tamminen</title>
 </head>
 <body>
-
     <header>
-        <a href="index.html" id="headline">Portfolio</a>
-        <nav id="header-links">
-            <a href="index.html#writings">Writings</a>
-            <a href="index.html#designs">Designs</a>
-            <a href="index.html#links">Links</a>
-            <a href="thoughts.html">Thoughts</a>
-        </nav>
+        <h1>Random scribblings</h1>
     </header>
-
-    <main>
-        <section id="me">
-            <h1>Random scribblings</h1>
-	    <h2>About early user testing</h2>
-	    <p class="credentials">11.10.2024 J. Tamminen</p>
-	    <p>I just recently had the great privilege to visit the wonderful people at Platform6, who were hosting a usability and early user testing workshop. I went there with a mindset of finding out what the sentiment of the startup community is towards usability and user testing. To my mind it’s a complete no-brainer. Of course you need to do user analysis, of course you need to talk to ypur customers, of course you need to test early, of course you need to iterate the design based on the feedback. And of course you have at least one person dedicated to doing that. Right? You do, don’t you? Why are you looking at me like I’m speaking in an alien language?</p>
-	    <p>Look now. Technology is cheap. It’s relatively simple. Almost anyone can put together a web app pretty quickly, and if they can’t, they can ask AI. Same pretty much goes for design as well. So what’s the catch? What is the edge that makes your solution stand out?</p>
-	    <p>The world is full of bad, really bad, usability. Yes, I’m looking at you, the developer who says: “They should just read the manual”. The world is full of apps which provide a very clever solution to a problem nobody has ever had. And what’s worse, the world is full of plugins for various platforms, which provide a very clever solution to a problem that shouldn’t exist. In other words, to a problem that was most likely created by poor design.</p>
-	    <p>So why don’t we all start solving problems that are really there, instead of those we make up ourselves? Because we don’t know what those problems are. I certainly don’t. And chances are, if you are a developer, you don’t know either. Who does? A consultant at 3 000 € per day perhaps. Or not. You already know where I’m heading with this, because you’re clever. Yes, it’s the customer I’m talking about. They will know what problems they have, and you can find it out if you just go and ask. If you know how to ask the right questions, the customer might even provide you with a solution to that problem. After that it’s just a question of clever implementation.</p>
-<p>And finally a disclaimer, I realise it might seem I’m downplaying the role of developers and development here, but I assure you I do not. As a general rule I don’t code, I don’t like it, I’m not very good at it, and I greatly respect the people who do it. But in my opinion these are things that coders should advocate as well. I think the job of a programmer would be a lot easier, if they were given a good, properly thought out and most importantly tested design document, on which they can base their work.</p>
-	    <p class="thoughts-links">Links related to entry:</p>
-	    <a href="https:www.platform6.fi" target="_blank">Platform6</a>
-        </section>
-    </main>
-
+	
+	<main>
+		<div class="grid" id="thoughts-nav">
+			<p><a href="index.html">Back</a></p>
+			<button class="button" onclick="lightMode()">Light mode toggle</button>
+		</div>
+		
+		<div class="thoughts-text">
+			<h2>On usability and manuals</h2>
+			<p class="credentials">06.01.2025 J. Tamminen</p>
+			<p>I just recently noticed something that more clever people, or people who buy more things, have probably noticed a long time ago. What I realised was that electronics no longer have manuals. Or to be more specific, the manuals are no longer written, but rather drawn in some kind of hieroglyphs. Why, I wonder. One thing I can think of is the cost of translation. The manual would need to be translated to all the languages of all the regions the device is going to be sold in. That costs money. And while there are some language pairs where even complex and detailed texts like manuals can be translated reasonably well with an LLM, there are many languages into which the translation will turn out inadequate.*</p>
+			<p>Surely it also costs money to make a series pictograms that is easy to understand, but presumably it costs far less than doing a professional translation many times over. But then, is the series of images truly easy to understand? For me personally, no. I get from the illustration that I need to press this button to turn this thing on. And I get that if I then I press the same button again, something different happens, a mode changes. Sure, that much is clear. But exactly what happens? What is the purpose of this mode change? How, when and why should different modes be used? This, the pictures don’t tell me, hard as they might try. I just don’t understand what the pictures are supposed to mean.</p>
+			<p>In my opinion, manuals and instructions have a very close relationship to usability. Good manual is good usability, simple as that. Of course in a perfect world, the device is easy enough to use completely without a manual, but good luck with that. Bad usability is something we have now gotten used to, but at least in the past we could look things up from the manual, when nothing else worked. Now, it seems, we will soon be unable to do even that.</p>
+			<p>* An entirely unrelated example of this can be found on the Microsoft website, where they describe new features of Windows 11 update 24H2. For example the word “project,” as in present or display, is translated in Finnish to “projekti,” as in a task or a project to do. Also it has a line there in Finnish, “Windows tarjoaa nyt sudo-komennon, joka tuo tutun korkeusmenetelmän komentoriviliittymään.” Right, I get what that means, but only because I use Linux and know sudo from there. So I wonder, is it really a good strategy for MS to use language on their own site, where understanding what they are on about relies on Linux experience? And I really can’t figure out what is the English language word that got jumbled into “korkeusmenetelmä.” Maybe a pictogram could tell me.</p>
+		</div>
+		
+		<div class="thoughts-text">
+			<h2>Of early user testing</h2>
+			<p class="credentials">17.10.2024 J. Tamminen</p>
+			<p>I just recently had the great joy to visit the wonderful people at Platform6, who were hosting a usability and early user testing workshop. I went there with a mindset of finding out what the sentiment of the startup community is towards usability and user testing. To my mind it’s a complete no-brainer. Of course you need to do user analysis, of course you need to talk to your customers, of course you need to test early, of course you need to iterate the design based on the feedback. And of course you have at least one person dedicated to doing that in the building. Right? You do, don’t you? Why are you looking at me like I’m speaking in an alien language?</p>
+			<p>Look now. Technology is cheap. It’s relatively simple. Almost anyone can put together a web app pretty quickly, and if they can’t, they can ask AI. Same pretty much goes for design as well. So what’s the catch? What is the edge that makes your solution stand out?</p>
+			<p>The world is full of bad, really bad, usability. Yes, I’m looking at you, the developer who says: “They should just read the manual”. The world is full of apps which provide a very clever solution to a problem nobody has ever had. And what’s worse, the world is full of plugins for various platforms, which provide a very clever solution to a problem that shouldn’t exist. In other words, to a problem that was most likely created by poor design.</p>
+			<p>So why don’t we all start solving problems that are really there, instead of those we make up ourselves? Because we don’t know what those problems are. I certainly don’t. And chances are, if you are a developer, you don’t know either. Who does? A consultant at 3 000 € per day perhaps. Or not. You already know where I’m heading with this, because you’re clever. Yes, it’s the customer I’m talking about. They will know what problems they have, and you can find it out if you just go and ask. If you know how to ask the right questions, the customer might even provide you with a solution to that problem. After that it’s just a question of clever implementation.</p>
+			<p>And finally a disclaimer, I realise it might seem like I’m being dismissive about the role of developers and development here, but I assure you I am not. As a general rule I don’t code. I don’t like it, I’m not very good at it, and I greatly respect the people who do it. But in my opinion good design is something that coders should advocate as well. I think the job of a programmer would be a lot easier, if they were given a good, properly thought out and most importantly tested design document, on which they can base their work.</p>
+			<p class="thoughts-links">Links related to entry:</p>
+			<p><a href="https://platform6.fi/" target="_blank">Platform6</a></p>
+		</div>
+	</main>
+	
     <footer>
-        <nav id="footer-links">
-            <a href="mailto:random.email@email.com">Email</a>
-            <a href="https://www.linkedin.com/in/j-tamminen" target="_blank">LinkedIn</a>
-            <a href="https://github.com/jasseT" target="_blank">GitHub </a>
-        </nav>
-        <div class="copyright">&copy; 2024 Juhani Tamminen. All rights reserved.</div>
+        <p id="copy">&copy; 2025 Juhani Tamminen</p>
     </footer>
-
 </body>
 </html>
+
+<script src="scripts.js"></script>

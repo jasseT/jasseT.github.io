@@ -3,84 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>J. Tamminen</title>
 </head>
 <body>
-
     <header>
-        <a href="index.html" id="headline">Portfolio</a>
-        <nav id="header-links">
-            <a href="index.html#writings">Writings</a>
-            <a href="index.html#designs">Designs</a>
-            <a href="index.html#links">Links</a>
-            <a href="thoughts.html">Thoughts</a>
-        </nav>
+        <h1>It's My Site</h1>
     </header>
-
-    <main>
-        <section id="me">
-            <h1>Who am I?</h1>
-		<div class="side-by-side">
-		<ul>
-			<li>Multitalented professional, generalist, blue sky thinker</li>
-			<li>Last few years in translation and subtitling business</li>
-			<li>Interested in all things usability and UX and in team management and agile development</li>
-			<li>Don’t do code much, but fiddle about with AI to develop things</li>
-		</ul>
-		<img alt="Profiilikuva" src="profiilikuva.jpg">
+	
+	<main>
+	
+		<!-- Mobile navigation -->
+		<div id="mobile-nav">
+			<div class="grid">
+				<p><a href="#top">About me</a></p>
+				<p><a href="#mwritings">Writings</a></p>
+				<p><a href="#mlinks">Links</a></p>
+				<p><a href="thoughts.html">Thoughts</a></p>
+			</div>
 		</div>
-		<p>Some more content</p>
-        </section>
-
-        <section id="writings">
-            <h1>Writings</h1>
-            <p>I have written a few words and translated a more, in many cases much better, words by other people. In case someone is interested, here are some highlights in no particular order. All of which have been released and re-released on several occasions by the way, and I’m not telling you which one of those releases I may or may not have worked on, so no NDA issues here. And who believes anything they read on a random website anyway?</p>
-			<div class="side-by-side">
-            <ul>
-				<li>13 Reasons Why</li>
-				<li>Chilling Adventures of Sabrina</li>
-				<li>Better Call Saul</li>
-				<li>Money Heist</li>
-				<li>Elite</li>
-            </ul>
-            <ul>
-				<li>Arnold</li>
-				<li>Madam Secretary</li>
-				<li>SWAT</li>
-				<li>Mindhunter</li>
-				<li>Blue Bloods</li>
-            </ul>
-        </div>
-		<p>And as I mentioned, there has been some own creation in there somewhere as well. At the moment I’m only willing to disclose a certain travel documentary and a cookbook, which isn’t really a cookbook. The latter is only in Finnish, if a hundred people ask, I’ll consider translating.</p>
-		<div class="side-by-side">
-		<p>A thing</p>
-		<p>Another thing</p>
-		<p>Third thing?</p>
-		</div>
-        </section>
-        <section id="designs">
-            <h1>Designs</h1>
-            <p>There really is not much content here yet.</p>
-        </section>
 		
-        <section id="links">
-            <h1>Links</h1>
-			<p>Some assorted links to things I've had something to do with.</p>
-			<a href="https://www.linkedin.com/in/j-tamminen" target="_blank">LinkedIn</a><br>
-			<a href="https://github.com/jasseT" target="_blank">GitHub</a><br>
-			<a href="https://www.figma.com/jtamminen" target="_blank">Figma</a><br>
-        </section>
-    </main>
-
+		<div class="container">
+			<!-- Left -->
+			<div class="left-column">
+				<div class="box" id="about">
+					<h2>About Me</h2>
+				</div>
+				<div class="box" id="writings">
+					<h2>Writings</h2>
+				</div>
+				<div class="box" id="links">
+					<h2>Links</h2>
+				</div>
+				<div class="box" id="thoughts">
+					<h2><a href="thoughts.html">Thoughts</a></h2>
+				</div>
+			</div>
+			
+			<!-- Right -->
+			<div class="box right">
+				<div class="content about-content">
+					<h2>Who am I?</h2>
+					
+					<p>Well isn’t that the question.</p>
+					<p>Professionally speaking:</p>
+					
+					<ul>
+						<li>Multitalented professional, generalist, blue sky thinker.</li>
+						<li>MSc, Information studies and interactive media;<br>BSc, Human-computer interaction.</li>
+						<li>Interested in all things concerning HCI and UX, users and usability testing.</li>
+						<li>Last ten years as a freelancer in the translation and subtitling business.</li>
+						<li>Don’t code much, but fiddle about with AI sometimes.</li>
+					</ul>
+					
+					<p>Then for some other questions.</p>
+					
+					<ul>
+						<li>What's the point of this site? I'm not sure, really.</li>
+						<li>Am I looking to get hired? Technically, yes.</li>
+						<li>What can I do? Many things. My two main areas of interest are IT and language.</li>
+					</ul>
+					
+					<p>Unprofessionally speaking, I write, read and translate, and spend most of my time finding things out about various topics. I like having a good time and not restricting myself, life is way too short to spend on things one doesn't like.</p>
+					<p>When thinking about the tone of this text, I wondered should it be more serious, or "professional," as they say. But that would be somewhat dishonest.</p>
+					<p>Creativity and problem solving stem from a free flow of thought, which shouldn’t be stifled with overly restrictive rules. If I need to write a serious text or an academic article, sure I will do it, and do it well, without fooling around. But that is the job, not me, and after all, the question this chapter is trying to answer is “who am I”. Below is me thinking about that.</p>
+					
+					<img class="profile" src="profiilikuva.jpg" alt="Profile picture">
+					
+					<p>Over the past couple of years I have taken quite a few online courses on different platforms like Udemy and Digicampus. At the risk of creating too many lists, here's a short list of some of them.</p>
+					
+					<ul id="mwritings"> <!-- It is a particularly horrible thing to place this anchor here, I know -->
+						<li>AI and Cybersecurity</li>
+						<li>Elements of AI</li>
+						<li>Persuasive System Design</li>
+						<li>Sustainable Digital Life</li>
+						<li>Introduction to Cloud Computing on AWS</li>
+						<li>Introduction to Microsoft Power Apps</li>
+						<li>Digitalisation and Conversational AI</li>
+					</ul>
+				</div>
+				
+				<div class="content writings-content">
+					<h2>Translations and texts</h2>
+					
+					<p>I have written a few words and translated far more, and in many cases far better, words by others. In case someone is interested, here are some highlights in no particular order. All of which have been released and re-released on several occasions by the way, and I’m not telling you which one of those releases I may or may not have worked on, so no NDA issues here. And who believes anything they read on a random website anyway?</p>
+					
+					<ul>
+						<li>13 Reasons Why</li>
+						<li>Chilling Adventures of Sabrina</li>
+						<li>Better Call Saul</li>
+						<li>Money Heist</li>
+						<li>Elite</li>
+						<li>Arnold</li>
+						<li>Madam Secretary</li>
+						<li>SWAT</li>
+						<li>Mindhunter</li>
+						<li>Blue Bloods</li>
+					</ul>
+					
+					<p>As for other writings, much of it has been done under pen names, which shan't be disclosed here, or as ghost writing jobs on different platforms.</p>
+					<p>Types of work range from fictional to technical and academic, with client needs always coming first. For me, the readability and flow of text are as important as clarity and precision, and these aspects are not mutually exclusive.</p>
+					<p>I might upload some things under my own name here at some point. Until then, there's a cookbook that isn’t really a cookbook. It's also Unfortunately only available in Finnish. If a hundred people ask, I’ll consider translating.</p>
+					
+					<div class="grid">
+						<figure>
+							<a href="https://mega.nz/file/0vRmWSDK#2VnHbeJDWfDm6PvgKRHeFf5jNHFT8YJcca8Wka3Wwas" target="_blank">
+							<img class="thumbnail" src="pdf_thumbnail.png" alt="Cookbook link">
+							<figcaption>Cookbook (Megalink)</figcaption>
+							</a>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="content links-content" id="mlinks">
+					<h2>Where to reach me (in new window)</h2>
+					
+					<p><a href="mailto:b0ws9e5j1@mozmail.com">Email</a> (With Firefox Relay)</p>
+					<p><a href="https://www.linkedin.com/in/j-tamminen" target="_blank">LinkedIn</a></p>
+					<p><a href="https://github.com/jasseT" target="_blank">GitHub</a> (Empty)</p>
+				</div>
+				
+				<div class="content thoughts-content">
+					<h2>Click it</h2>
+				</div>
+			</div>
+		</div>
+	</main>
+	
     <footer>
-        <nav id="footer-links">
-            <a href="mailto:random.email@email.com">Email</a>
-            <a href="https://www.linkedin.com/in/j-tamminen" target="_blank">LinkedIn</a>
-            <a href="https://github.com/jasseT" target="_blank">GitHub </a>
-        </nav>
-        <div class="copyright">&copy; 2024 Juhani Tamminen. All rights reserved.</div>
+        <p id="copy">&copy; 2025 Juhani Tamminen</p>
     </footer>
-
 </body>
 </html>
+
+<script src="scripts.js"></script>

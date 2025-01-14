@@ -1,0 +1,192 @@
+body {
+    background-color: rgba(25, 25, 25);
+	color: white;
+	opacity: 0.9; /* This should ensure all text, lists, borders will be the same shade */
+	font-family: Roboto, Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.light-mode {
+	background-color: rgba(245, 245, 245);
+	color: black;
+	opacity: 0.9;
+}
+
+.button {
+	background-color: rgba(25, 25, 25);
+	border: 0;
+	font-size: 1em;
+}
+
+p, ul {
+	letter-spacing: 0.05em;
+	line-height: 1.3em;
+}
+
+h1, h2 {
+	text-transform: capitalize;
+	font-family: "Zilla slab";
+}
+
+h1 {
+	letter-spacing: 0.15em;
+}
+
+h2 {
+	letter-spacing: 0.08em;
+}
+
+img.profile {
+	border-radius: 5px;
+	height: 250px;
+	display: block;
+	margin: 50px auto;
+}
+
+img.thumbnail {
+	border-radius: 2px;
+	height: 50px;
+	background-color: white;
+	color: black;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+	left: 0;
+	right: 0;
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+	width: 99%; /* Sort of failsafe for tablets */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column; /* Stack left boxes vertically */
+    flex: 1; /* Allow left column to take equal space */
+    margin-right: 10px; /* Add some space between left and right */
+	text-align: center;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+.box {
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 10px; /* Add space between boxes */
+}
+
+.right {
+    flex: 2; /* Allow right box to take more space */
+	padding: 20px 30px;
+}
+
+.content {
+    display: none; /* Hide all content by default */
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	max-width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+#copy {
+    font-size: 0.8em;
+	letter-spacing: 0;
+}
+
+/* Everything related to links */
+a, .button {
+    letter-spacing: 0.08em;
+    text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+	color: white;
+}
+
+a:hover, .button:hover {
+    text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* Rules specifically for the Thoughts page */
+#thoughts-nav {
+	text-align: center;
+	font-size: 1.3em;
+	position: sticky;
+	top: 0;
+	max-width: 100%;
+	background-color: rgba(25, 25, 25); /* This is needed to have content scroll behind the bar */
+	z-index: 100; /* Just to make sure */
+}
+
+.thoughts-text {
+	text-align: justify;
+	width: 90%;
+	max-width: 800px;
+	margin: 50px auto 80px auto;
+}
+
+.credentials {
+	text-align: right;
+	font-style: italic;
+}
+
+.thoughts-links {
+	font-weight: bold;
+}
+
+/* More mobile friendly rules */
+@media screen and (max-width: 500px), (max-height: 500px) {
+	header, footer {
+		padding: 0;
+	}
+	
+	h2 {
+		padding-top: 50px;
+	}
+	
+	.left-column {
+		display: none;
+	}
+	
+	#mobile-nav {
+		display: block;
+		position: sticky;
+		top: 0;
+		background-color: rgba(25, 25, 25);
+		border-bottom: 1px solid white;
+	}
+	
+	.box {
+		border: 0;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	.content {
+		display: block;
+	}
+	
+	.thoughts-content {
+		display: none;
+	}
+	
+	.grid {
+		width: 100%;
+	}
+	
+	.thoughts-text {
+		margin: 20px;
+	}
+}
