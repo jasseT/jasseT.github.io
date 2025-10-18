@@ -90,6 +90,13 @@ header, footer {
 
 .content {
     display: none; /* Hide all content by default */
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.content.active {
+	display: block;
+	opacity: 1;
 }
 
 .grid {
@@ -172,6 +179,7 @@ a:hover, .button:hover {
 	
 	.content {
 		display: block;
+		opacity: 1;
 		padding-bottom: 100px;
 		border-bottom: 1px solid white;
 	}

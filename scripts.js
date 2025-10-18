@@ -5,12 +5,19 @@ boxes.forEach(box => {
 	
 	function showContent() {
 		// Hide all contents
-		contents.forEach(content => content.style.display = 'none');
+		contents.forEach(content => {
+			content.classList.remove('active'); // Remove active class for fade out
+			content.style.display = 'none'; // Hide immediately to reset for fade in
+		});
+		
 		// Show the corresponding content
 		const contentClass = box.id + '-content';
 		const activeContent = document.querySelector(`.${contentClass}`);
 		if (activeContent) {
 			activeContent.style.display = 'block';
+			setTimeout(() => {
+				activeContent.classList.add('active'); // Fade in
+			}, 10); // Small timeout to allow for display
 		}
 	}
 	
@@ -21,15 +28,10 @@ boxes.forEach(box => {
 	
 	// Touch listener for large touch screens, small screens have a separate menu
 	box.addEventListener('touchstart', () => {
+		event.preventDefault();
 		showContent();
 	});
 
-	/* This isn't necessary, the content needs to be clickable
-	box.addEventListener('mouseleave', () => {
-		// Hide all contents when mouse leaves
-		contents.forEach(content => content.style.display = 'none');
-	});
-	*/
 });
 
 // Toggle light mode on thoughts page
