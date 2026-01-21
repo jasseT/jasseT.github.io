@@ -101,7 +101,7 @@ header, footer {
 
 .grid {
 	display: grid;
-        grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
 	max-width: 80%;
 	margin: auto;
 	text-align: center;
@@ -157,11 +157,11 @@ a:hover, .button:hover {
 	header, footer {
 		padding: 0;
 	}
-	
+
 	.left-column {
 		display: none;
 	}
-	
+
 	#mobile-nav {
 		display: block;
 		position: sticky;
@@ -172,30 +172,30 @@ a:hover, .button:hover {
 		word-spacing: 20px;
 		padding-top: 1px;
 	}
-	
+
 	.box {
 		border: 0;
 	}
-	
+
 	.container {
 		width: 100%;
 	}
-	
+
 	.content {
 		display: block;
 		opacity: 1;
 		padding-bottom: 100px;
 		border-bottom: 1px solid white;
 	}
-	
+
 	.thoughts-content {
 		display: none;
 	}
-	
+
 	.grid {
 		width: 100%;
 	}
-	
+
 	.thoughts-text {
 		margin: 20px;
 		padding-bottom: 50px;
