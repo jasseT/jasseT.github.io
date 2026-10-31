@@ -1,4 +1,4 @@
-# Portfolio
+# Readme
 
 Old school static site just for the fun of it.  
 HTML, CSS and a tiny bit of JS with no frills.  
